@@ -1,0 +1,58 @@
+/* buttons */
+.global-btn {
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  min-width: 180px;
+  /* height: 48px; */
+}
+@media (min-width: 768px) {
+  .global-btn {
+    min-width: 200px;
+  }
+}
+
+.global-btn.large {
+  font-size: 18px;
+}
+
+.global-btn:hover {
+  filter: brightness(120%);
+}
+
+.global-btn.pink {
+  background-color: var(--primary-pink);
+  color: white;
+}
+
+.global-btn.pink:hover {
+  color: white;
+}
+
+.global-btn.gradient {
+  position: relative;
+}
+
+.global-btn.gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 2em;
+  padding: 2px;
+  background: var(--gradient);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.global-btn.gradient > span {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

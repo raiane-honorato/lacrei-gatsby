@@ -1,0 +1,130 @@
+/* global styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+/*! pode ser substituido por .d-none pela API do bootstrap */
+.hidden {
+  display: none;
+}
+
+/* lines */
+
+#hero-pink-block {
+  width: 61px;
+  height: 3px;
+  background: var(--primary-pink);
+  border-radius: 4px;
+}
+
+.gradient-line {
+  min-width: 4px;
+  min-height: 100%;
+  background: var(--gradient-bottom);
+  border-radius: 4px;
+}
+
+section {
+  border-bottom: 1px solid #fcd7ed;
+}
+
+#hero-line {
+  color: #fcd7ed;
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sub-menu-line {
+  color: var(--primary-pink);
+  opacity: 0.3;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* grids */
+.global-grid {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  grid-column-gap: 1rem;
+  align-content: center;
+}
+
+.grid-55 {
+  grid-template-columns: 5fr 5fr;
+  margin-top: 4rem;
+  align-items: flex-start;
+}
+
+.grid-35 {
+  grid-template-columns: 3fr 5fr;
+  margin-top: 4rem;
+  align-items: flex-start;
+}
+
+.grid-btn-img {
+  grid-row: span 3;
+}
+
+.grid-photo {
+  grid-row: span 2;
+}
+
+.grid-header {
+  align-self: flex-end;
+}
+
+.grid-full-header {
+  grid-column: span 2;
+}
+
+.grid-content {
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .container-lg {
+    max-width: 92vw;
+  }
+  .container-md {
+    max-width: 92vw;
+  }
+
+  .navbar-dropdown {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+  #hero-pink-block {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .global-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .grid-header {
+    align-self: stretch;
+    margin-bottom: 1rem;
+  }
+
+  .grid-55-header {
+    order: -1;
+  }
+
+  .grid-btn-img {
+    margin: 2rem 0;
+  }
+
+  .sub-menu-title {
+    display: none;
+  }
+}

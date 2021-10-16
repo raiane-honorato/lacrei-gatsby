@@ -1,0 +1,16 @@
+:root{
+
+  /* Cores */
+
+  --primary-pink: #DF1098;
+  --gradient:-webkit-linear-gradient(left, var(--primary-pink), #BA17E2);
+  --gradient-bottom:-webkit-linear-gradient(bottom, var(--primary-pink), #BA17E2);
+  --primary-purple:#7C17E2;
+  --secondary-purple: #E3C7FF;
+  --purple-5: #C8B9FF;
+  --primary-grey: #FBF6FF;
+
+  /* Media queries */
+  
+  --medium-screens: max-width : 768px;
+}

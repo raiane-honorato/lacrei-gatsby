@@ -1,0 +1,43 @@
+/* typography  -------------- */
+body {
+  font-family: nunito, sans-serif !important;
+}
+p,
+h1,
+h2,
+h3,
+button,
+a,
+span {
+  font-family: inherit;
+  text-decoration: none !important;
+}
+
+h1 {
+  font-size: calc(2.3rem + 0.5vw);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: calc(1.8rem + 0.5vw);
+  font-weight: bold;
+}
+
+p {
+  color: #515151cc;
+}
+
+.text-black p {
+  color: #220f1a;
+}
+
+/* custom titles  -------------- */
+
+.pink-title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--primary-pink);
+}

@@ -1,0 +1,7 @@
+section {
+	margin-top: 2rem;
+}
+
+.lista-de-exemplos {
+	max-height: calc(100vh - 150px);
+}

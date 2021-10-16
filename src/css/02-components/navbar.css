@@ -1,0 +1,53 @@
+/* navbar */
+.page-container {
+  position: relative;
+  width: 100%;
+}
+.nav-container {
+  background-color: #f4f4f4;
+  /* height: 57px; */
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+/* .nav-container > .container-lg {
+  height: 57px;
+} */
+
+.nav-link {
+  font-size: 12px;
+  font-weight: bold;
+  color: #220f1a !important;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.nav-link:hover {
+  color: var(--primary-pink) !important;
+}
+
+.active-link {
+  color: var(--primary-pink) !important;
+  border-bottom: 3px solid var(--primary-pink);
+  padding-bottom: 2px;
+}
+
+.navbar-dropdown {
+  background-color: #f4f4f4;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler-icon {
+  background-image: url(./../../img/global-nav-hamburguer.svg) !important;
+}
+
+.sub-menu-title {
+  margin-right: auto;
+}
